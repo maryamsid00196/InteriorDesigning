@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Heavenly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    
+
+    <section class="inner_shop_1">
+        <div class="first_shop_01">
+            <nav class="shop_nav" id="navbar_1">
+                <ul class="nav_shop">
+                    <li>Featured</li>
+                    <li>Furniture</li>
+                    <li>Decor&Pillows</li>
+                    <li>Rugs</li>
+                    <li>Lighting</li>
+                </ul>
+            </nav>
+            <h1 class="first_shop_01_h1">Out of Office</h1>
+            <button class="first_shop_01_b">Shop Collection</button>
+        </div>
+        <div class="first_shop_02 container">
+            <h1 class="first_shop_02_h1">Bring home style</h1>
+            <div class="first_shop_02_div01">
+                <hr>
+            </div>
+            <div class="overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col col_45">
+                        <div class="p-3"><img src="8bf300a5-9948-40c3-8bc6-fc4c4ea93300_Sofas&Sectionals_Desktop.avif"
+                                alt="">
+                            <h2>SOFAS & SECTIONALS</h2>
+                        </div>
+                    </div>
+                    <div class="col col_45">
+                        <div class="p-3"><img src="876f6ed6-15d2-4baf-b253-a3dde20faca8_AccentSeating_Desktop.avif"
+                                alt="">
+                            <h2>ACCENT SEATING</h2>
+                        </div>
+                    </div>
+                    <div class="col col_45">
+                        <div class="p-3"><img src="27ce9d83-03bc-46b3-b867-a2b912f61ab6_DiningFurniture_Desktop.avif"
+                                alt="">
+                            <h2>DINING FURNITURE</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="first_shop_03">
+            <h1 class="first_shop_03_h1">We do home... <br> so you can do everything else</h1>
+            <p class="first_shop_03_p">We take the guesswork out of creating a delightful home, combining expert
+                guidance with a digital shopping experience fit for this generation.</p>
+            <button class="first_shop_03_b" onclick="toggleVideo()"><i class="fa fa-play"
+                    style="color: rgba(255, 48, 48, 0.918);"></i></button>
+            <p class="first_shop_03_p" style="font-size: 15px; margin-top: 15px;">See Us In Motion</p>
+            <div id="videoContainer"></div>
+
+        </div>
+        <div class="first_shop_04 container">
+            <button class="first_shop_04_b first_shop_04_b active">PATTERN PLAY</button>
+            <button class="first_shop_04_b first_shop_04_b1">AL FRESCO</button>
+            <button class="first_shop_04_b first_shop_04_b2">MODERN ORGANIC</button>
+            <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)"
+                style="display: inline-block; margin-left: 650px;">
+                <ul id="cartItems" style="display: none;"></ul>
+                <p id="cartPrice" style="display: inline-block;">$0</p>
+                <i class="fa fa-shopping-cart" style="display: inline-block;"></i>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="board_3088777_9f7a5489.webp" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 col-md-6">
+                                <img src="md5_2d45a10cdab4b342efe334f731a6b8bd.webp" alt="" id="product-1"
+                                    class="product" draggable="true" ondragstart="drag(event)">
+                                <p class="first_shop_04_p">Mark D. Sikes Ceramic Lamp Base, Blue, 22" x 22"
+                                </p>
+                                <p class="first_shop_04_p">
+                                    $118 <span style="color: gray; text-decoration: line-through;">$268</span>
+                                </p>
+                            </div>
+                            <div class="col-4 col-sm-6 col-md-6">
+                                <img src="md5_5a421d758d53debc05e03722d7058a04.webp" alt="" id="product-2"
+                                    class="product" draggable="true" ondragstart="drag(event)">
+                                <p class="first_shop_04_p">Cube Ottoman, Cornflower Classic Tickin, 22" x 22"
+                                </p>
+                                <p class="first_shop_04_p">
+                                    $259 <span style="color: gray; text-decoration: line-through;">$319</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 col-sm-6 col-md-6">
+                                <img src="md5_60275a408e5d771730f73d11971b8394.webp" alt="" id="product-3"
+                                    class="product" draggable="true" ondragstart="drag(event)">
+                                <p class="first_shop_04_p">Modern Sofa, Limoges Bois De Chene, Br, 22" x 22"
+                                </p>
+                                <p class="first_shop_04_p">
+                                    $1666 <span style="color: gray; text-decoration: line-through;">$8555</span>
+                                </p>
+                            </div>
+                            <div class="col-4 col-sm-6 col-md-6">
+                                <img src="md5_9394912014e445c40440e1a288ebb61b.webp" alt="" id="product-4"
+                                    class="product" draggable="true" ondragstart="drag(event)">
+                                <p class="first_shop_04_p">Throw Pillow 22", Citrine Cabana Stripe, 2, 22" x 22"
+                                </p>
+                                <p class="first_shop_04_p">
+                                    $68 <span style="color: gray; text-decoration: line-through;">$355</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="first_shop_05 container text-center">
+            <div class="row" style="margin-top: 75px;">
+                <div class="col" style="width:139px; margin-top: 100px; ">
+                    <h1 class="first_shop_03_h1" style="font-style: normal;">Fresh For Spring</h1>
+                    <p class="first_shop_03_p another">We take the guesswork out of creating a delightful home,
+                        combining expert
+                        guidance with a digital shopping experience fit for this generation.</p>
+                </div>
+                <div class="col">
+                    <img src="c19e4eca-1384-4746-ab57-4289cb3048f6_fresh+for+spring.avif" alt="" class="image_in_05">
+                </div>
+            </div>
+        </div>
+        <div class="first_shop_06">
+            <img src="cta-want-look-avatar.png" alt="" width="75px">
+            <h1 class="first_shop_03_h1">Lets us help you <br> design your space</h1>
+           
+            <button class="first_shop_01_b" id="myButton">Take Our Style Quiz</button>
+        
+
+        </div>
+    </section>
+
+    <script>
+        var videoContainer = document.getElementById("videoContainer");
+        var isVideoVisible = false;
+
+        function toggleVideo() {
+            if (isVideoVisible) {
+                videoContainer.innerHTML = '';
+                videoContainer.style.display = 'none';
+                isVideoVisible = false;
+            } else {
+                videoContainer.innerHTML = '<iframe width="560" height="315" src="How Does Havenly Online Interior Design Work.mp4" frameborder="0" allowfullscreen></iframe>';
+                videoContainer.style.display = 'block';
+                isVideoVisible = true;
+            }
+        }
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var productId = event.dataTransfer.getData("text");
+            var product = document.getElementById(productId);
+
+            // Retrieve product details
+            var productName = product.nextElementSibling.textContent;
+            var productPrice = parseFloat(product.nextElementSibling.nextElementSibling.firstChild.textContent.replace(/[^0-9.]/g, ''));
+
+            // Add the product details to the cart
+            var cartItems = document.getElementById("cartItems");
+            var cartItem = document.createElement("li");
+            cartItem.innerHTML = productName + " - $" + productPrice;
+            cartItems.appendChild(cartItem);
+
+            // Update the cart price
+            var cartPrice = document.getElementById("cartPrice");
+            var currentPrice = parseFloat(cartPrice.textContent.slice(1));
+            cartPrice.textContent = "$" + (currentPrice + productPrice).toFixed(2);
+
+            // Highlight the purchased product
+            product.classList.add("highlight");
+        }
+
+        document.getElementById("myButton").addEventListener("click", function() {
+  window.open("WE Lab Quiz.html", "_blank");
+});
+
+
+    </script>
+      <footer id="footer">
+        <p>&copy; All rights reserved.</p>
+        <address>
+            <p>Maryam Siddiqui &nbsp;20-se-07 &nbsp;20-se-07@students.uettaxila.edu.pk</p>
+            <p>Sowaiba Arshad&nbsp;20-se-01 &nbsp;20-se-01@students.uettaxila.edu.pk</p>
+            <p>Nimra Basit&nbsp;20-se-13 &nbsp;20-se-13@students.uettaxila.edu.pk</p>
+          </address>
+    </footer>
+</body>
+
+</html>

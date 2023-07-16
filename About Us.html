@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Havenly</title>
+  <style>
+/* Common Styles */
+/*Heading 01*/
+h1 {
+  text-align: center;
+  color: #f5f5f5;
+  font-family: 'ABC Monument Grotesk, sans-serif; font-family: Graphik,sans-serif;';
+  font-size: 75px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Futura PT';
+  font-size: 28px;
+  transition: color 0.3s ease-in-out;
+}
+/*Heading 02*/
+h2:hover {
+  color: #dcae96;
+}
+/*Heading 03*/
+h3:hover {
+  color: #dcae96;
+}
+/*Body*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*Container*/
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*Parapgraph in container*/
+p {
+  color: #666;
+  line-height: 1.6;
+  transition: transform 0.3s ease-in-out;
+}
+p:hover {
+  transform: scale(1.05);
+}
+.styled-paragraph {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets */
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  h2 {
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Footer Elements */
+footer {
+  text-align: center;
+  transition: none;
+  transform: none;
+}
+footer p {
+  text-align: center;
+  color: black;
+}
+footer details {
+  text-align: center;
+  margin: 0;
+}
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: #333;
+  border-style: ridge;
+}
+.first_shop_01
+{
+    width:100%;
+    min-height: 95vh;
+    background-image: linear-gradient(rgba(100, 92, 92, 0.15), rgba(100,92,92,0.15)),url("f8c254a0-18eb-4793-90bd-af3773f9467b_how+it+works+gradient.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -59px;
+}
+.first_shop_01_h1
+{
+    margin-bottom: 42px;
+    font-size: 85px;
+    line-height: 80px;
+    letter-spacing: .8px;
+    max-width: 700px;
+    color: white;
+    font-family: Simula,serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}
+.first_shop_01_b
+{
+    cursor: pointer;
+    height: 52px;
+    font-size: 16px;
+    min-width: 163px;
+    color: #362b24;
+    background: #fff;
+    font-family: ABC Monument Grotesk,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    border-radius: 44px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.04);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+  </style>
+</head>
+<body>
+  <div class="first_shop_01">
+    <h1 class="first_shop_01_h1">Havenly's Interior Design Process</h1>
+    <button class="first_shop_01_b" id="myButton">Take Our Style Quiz</button>
+</div>
+  <h2>About Us</h2>
+  <div class="container">
+    <p class="styled-paragraph">Welcome to (Site), where creativity meets innovation. We are passionate about delivering outstanding designs that captivate and inspire our clients.</p>
+    <p class="styled-paragraph">At our designing site, we strive for excellence in every project we undertake. We collaborate closely with our clients to understand their vision and translate it into compelling designs that leave a lasting impression. Customer satisfaction is our top priority. We are committed to delivering high-quality designs that meet and exceed our clients' expectations. Our attention to detail and dedication to excellence sets us apart in the design industry.</p>
+    
+    <h2>How Does It Work?</h2>
+    <h3>Step 01</h3>
+    <p class="styled-paragraph">Select our competent designers to help you on the go.</p>
+    <img src="chairs-g7860f1278_1920.jpg"><br>
+
+    <h3>Step 02</h3>
+    <p class="styled-paragraph">Tell us what you need and together we'll bring it to life.</p>
+    <img src="furniture-g5918068ed_1920.jpg"><br>
+
+    <h3>Step 03</h3>
+    <p class="styled-paragraph">Our creative minds will come up with terrific ideas to revamp your space.</p>
+    <img src="home-g1c0b94d64_1920.jpg"><br>
+
+    <h3>Step 04</h3>
+    <p class="styled-paragraph">See what works for you. Add a beautiful touch to your space that matches your vibe.</p>
+    <img src="house-gc319c9518_1280.jpg"><br>
+
+    <h3>Step 05</h3>
+    <p class="styled-paragraph">Worry about logistics? You don't have to sweat it! Shop your items, and we'll take care of the rest.</p>
+    <img src="home-gdc5979b9d_1920.jpg"><br>
+
+  </div>
+  <script>
+       document.getElementById("myButton").addEventListener("click", function() {
+  window.open("WE Lab Quiz.html", "_blank");
+});
+
+  </script>
+<footer>
+  <p>Thank you for choosing our designing services. We look forward to working with you and bringing your ideas to life.</p>
+  <p>Contact information:<details>Email: <a href="mailto:havenly@gmail.com">havenly@gmail.com</a><br>
+  <address>Street 00, City ABC, District EFG, Country XYZ.</address></details></p>
+</footer>
+</html>

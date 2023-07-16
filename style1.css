@@ -1,0 +1,505 @@
+/* Reset some default styles */
+scrolled
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* Header styles */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    /* Ensure container does not exceed viewport width */
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    align-items: center;
+    max-width: 100px;
+    padding: 0 0px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #47070d;
+    text-decoration: none;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding-top: 15px;
+    display: flex;
+}
+
+#navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ac5959;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+/*AfterHome*/
+
+.afterhome {
+    background-color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0px;
+}
+
+.afterhome h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px;
+}
+
+.afterhome p {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+    padding-left: 0px;
+    padding-bottom: 80px;
+    padding-right: 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffca4f;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #ffbb33;
+}
+
+
+/*show style*/
+
+.show-us-your-style {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 10px;
+    margin-bottom: 20px;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-family: Graphik, sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-family: Graphik, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffca4f;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #ffbb33;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/*image1 part*/
+
+.image-with-text {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    flex: 0 0 50%;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 0 0 50%;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+    padding-left: 30px;
+}
+
+.text h2 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+
+.image-with-text p {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffca4f;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #ffbb33;
+}
+
+
+/* Hero section styles */
+
+.hero {
+    background-image: url('aaf2b5f2-e48e-474f-a2f2-b2b6472fabc2_new+hero+2+gradient+art.avif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 230px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero img.logo {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-family: Graphik, sans-serif;
+    font-weight: 200;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #362b24;
+    background: #e59400;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    min-width: 151px;
+}
+
+.hero .cta-button:hover {
+    text-decoration: none;
+    background: #304561;
+    color: #fff;
+}
+
+
+
+/* Services section styles */
+
+.services {
+    background-color: #f6f6f6;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.service-card {
+    display: inline-block;
+    width: 300px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+
+/* Testimonial section styles */
+
+.testimonial {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonial-card {
+    display: inline-block;
+    width: 300px;
+    background-color: #f6f6f6;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.testimonial-card p:last-child {
+    font-weight: bold;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+   color: #fff;
+    text-align: left;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/*imagewithtext*/
+
+.image-with-text {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    /* Clear float */
+}
+
+.image-with-text img {
+    float: right;
+    margin-left: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+.text {
+    overflow: hidden;
+    /* Clear float */
+}
+
+.image-with-text h2 {
+    font-size: 40px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+
+.image-with-text p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+
+
+/*timgwithtext2*/
+
+.image-with-text2 {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.image-with-text2 img {
+    order: 1;
+    margin-right: 20px;
+    margin-left: 5px;
+    width: 800px;
+    height: 500px;
+}
+
+.text {
+    order: 2;
+}
+
+.image-with-text2 h2 {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+
+.image-with-text2 p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-right: 170px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+@media only screen and (max-width: 375px) {
+    section#hero{
+     width: 442vw;
+     text-align: center;
+    }
+    
+ }
+ 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Havenly - Your Interior Design Destination</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <a href="#" class="logo">Havenly</a>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="http://localhost:3000/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+
+
+
+        <section id="hero" class="hero">
+            <h1>Welcome to Havenly</h1>
+            <p>Transform your space with our expert interior designers</p>
+            <a href="#services" class="cta-button">Get Started</a>
+
+        </section>
+
+
+
+
+        <section class="afterhome">
+            <div class="container">
+                <h2>LOVE THE SPACE YOU’RE IN</h2>
+                <p font-size="50">Bring your dream home to life with one-on-one design help & hand-picked products tailored to your style, space, and budget.</p>
+
+            </div>
+        </section>
+
+
+
+        <div class="image-with-text">
+            <img src="service1.jpg" alt="Image">
+            <div class="text">
+                <h2>Show us your style.</h2>
+                <p>Have big dreams for your space? Share your inspiration, goals, and budget and we’ll help you design a space you love. </p>
+
+            </div>
+        </div>
+
+
+        <div class="image-with-text2">
+            <img src="service3.jpg" alt="Image">
+            <div class="text">
+                <h2>Reimagine your space.</h2>
+                <p>Your designer will work with you one-on-one to bring your vision to life, complete with a 3D rendering of your actual space</p>
+
+            </div>
+        </div>
+        <br><br>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+
+                <img src="service4.jpg" alt="Service 1">
+                <h3>Interior Design Consultation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-card">
+                <img src="service6.jpg" alt="Service 2">
+                <h3>Room Makeover</h3>
+                <p>Aliquam erat volutpat. Morbi dictum dapibus convallis.</p>
+            </div>
+            <div class="service-card">
+                <img src="service5.jpg" alt="Service 3">
+                <h3>Custom Furniture</h3>
+                <p>Etiam pretium augue eu sem elementum, sit amet tempus magna pharetra.</p>
+            </div>
+        </section>
+
+
+        <section id="testimonial" class="testimonial">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-card">
+                <img src="service8.jpg" alt="Customer 1">
+                <p>"Havenly made the design process so easy and fun. Highly recommended!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="service9.jpg" alt="Customer 2">
+                <p>"I'm so impressed with Havenly's attention to detail."</p>
+                <p>- Jane Smith</p>
+            </div>
+        </section>
+
+
+    </div>
+    <footer id="footer">
+        <p>&copy; All rights reserved.</p>
+        <address>
+            <p>Maryam Siddiqui &nbsp;20-se-07 &nbsp;20-se-07@students.uettaxila.edu.pk</p>
+            <p>Sowaiba Arshad&nbsp;20-se-01 &nbsp;20-se-01@students.uettaxila.edu.pk</p>
+            <p>Nimra Basit&nbsp;20-se-13 &nbsp;20-se-13@students.uettaxila.edu.pk</p>
+          </address>
+    </footer>
+
+    <script>
+        // Smooth scrolling functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#navbar').addClass('scrolled');
+                } else {
+                    $('#navbar').removeClass('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

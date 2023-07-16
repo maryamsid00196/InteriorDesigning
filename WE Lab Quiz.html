@@ -1,0 +1,225 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Interior Design Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Set up the questions and answers
+			const questions = [
+				{
+					question: "Which color palette creates a calming atmosphere?",
+					answers: [
+						{ text: "Red and orange", correct: false },
+						{ text: "Blue and green", correct: true },
+						{ text: "Yellow and pink", correct: false },
+						{ text: "Purple and black", correct: false }
+					]
+				},
+				{
+					question: "What is the most important consideration when choosing furniture for a small space?",
+					answers: [
+						{ text: "Style", correct: false },
+						{ text: "Size", correct: true },
+						{ text: "Color", correct: false },
+						{ text: "Material", correct: false }
+					]
+				},
+				{
+					question: "What type of lighting is best for a living room?",
+					answers: [
+						{ text: "Table lamps", correct: false },
+						{ text: "Floor lamps", correct: false },
+						{ text: "Overhead lighting", correct: true },
+						{ text: "Candlelight", correct: false }
+					]
+				},
+				{
+					question:"What is the best way to create a focal point in a room?",
+					answers: [
+						{ text: "Using height", correct: false },
+						{ text: "Bold Colours", correct: false },
+						{ text: "Play with shapes", correct:false },
+						{ text: "Use of contrast", correct: true}
+					]
+				}
+			];
+            // Selecting the elements from the HTML file
+		const startButton = document.getElementById("start-btn");
+		const nextButton = document.getElementById("next-btn");
+		const restartButton = document.getElementById("restart-btn");
+		const questionContainer = document.getElementById("question-container");
+		const questionElement = document.getElementById("question");
+		const answerButtonsElement = document.getElementById("answer-buttons");
+		const scoreContainer = document.getElementById("score-container");
+		const scoreElement = document.getElementById("score");
+		const totalScoreElement = document.getElementById("total-score");
+		const encouragingLineElement = document.getElementById("encouraging-line");
+
+		// Other variables needed for the quiz
+		let currentQuestionIndex;
+		let score;
+
+		// Add click event listener to the start button
+		startButton.addEventListener("click", startQuiz);
+
+		// Add click event listener to the next button
+		nextButton.addEventListener("click", () => {
+			currentQuestionIndex++;
+			showQuestion();
+		});
+
+		// Add click event listener to the restart button
+		restartButton.addEventListener("click", () => {
+			score = 0;
+			currentQuestionIndex = 0;
+			showQuestion();
+			scoreContainer.classList.add("hide");
+			restartButton.classList.add("hide");
+			nextButton.classList.remove("hide");
+			totalScoreElement.innerText = "";
+			encouragingLineElement.innerText = "";
+		});
+        // Function to start the quiz
+function startQuiz() {
+score = 0;
+currentQuestionIndex = 0;
+startButton.classList.add("hide");
+scoreContainer.classList.remove("hide");
+showQuestion();
+}
+// Function to show the current question and its answer choices
+function showQuestion() {
+  const question = questions[currentQuestionIndex];
+  questionElement.innerText = question.question;
+  answerButtonsElement.innerHTML = ""; // Clear previous answer buttons
+  question.answers.forEach(answer => {
+    // Create and append answer buttons
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    } else {
+      button.dataset.correct = "false";
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtonsElement.appendChild(button);
+  });
+  scoreElement.innerText = "Question Score: " + score;
+  nextButton.classList.add("hide");
+  restartButton.classList.add("hide");
+}
+
+// Function to handle the answer selection
+function selectAnswer(event) {
+  const selectedButton = event.target;
+  const correct = selectedButton.dataset.correct === "true";
+  if (correct) {
+    score++;
+  }
+  Array.from(answerButtonsElement.children).forEach(button => {
+    button.disabled = true;
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    } else {
+      button.classList.add("incorrect");
+    }
+  });
+  scoreElement.innerText = "Question Score: " + score*10;
+  if (currentQuestionIndex === questions.length - 1) {
+    nextButton.classList.add("hide");
+    restartButton.classList.remove("hide");
+    totalScoreElement.innerText = "Total Score: " + score;
+    if (score === questions.length) {
+      encouragingLineElement.innerText = "Congratulations! You got all the answers correct!";
+    } else if (score === 0) {
+      encouragingLineElement.innerText = "Oops! Better luck next time.";
+    } else {
+      encouragingLineElement.innerText = "Well done! Keep up the good work.";
+    }
+  } else {
+    nextButton.classList.remove("hide");
+  }
+}
+});
+</script>
+
+<style>
+    body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+.quiz-container {
+	max-width: 800px;
+	margin: auto;
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#question-container {
+	margin-bottom: 20px;
+}
+
+.btn-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.btn {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #e3bc9a ;
+	color: #000000;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #dcae96;
+}
+
+.correct {
+	background-color: #5cb85c;
+}
+
+.incorrect {
+	background-color: #d9534f;
+}
+
+.hide {
+	display: none;
+}
+</style>
+</head>
+<body>
+	<div class="quiz-container">
+		<div id="question-container">
+			<h2 id="question"></h2>
+			<div id="answer-buttons" class="btn-grid">
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+			</div>
+		</div>
+		<div id="controls">
+			<button id="start-btn" class="btn">Start Quiz</button>
+			<button id="next-btn" class="btn hide">Next Question</button>
+			<button id="restart-btn" class="btn hide">Restart Quiz</button>
+		</div>
+		<div id="score-container" class="hide">
+			<p id="score">Question Score: 0</p>
+			<p id="total-score"></p>
+			<p id="encouraging-line"></p>
+		</div>
+	</div>
+</body>
+</html>

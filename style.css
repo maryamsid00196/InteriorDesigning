@@ -1,0 +1,370 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    font-family: Graphik,sans-serif;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+.first_shop_01
+{
+    width:100%;
+    min-height: 95vh;
+    background-image: linear-gradient(rgba(100, 92, 92, 0.15), rgba(100,92,92,0.15)),url("4d47b0b2-8a7f-491d-b4ea-d484d6887405_LP+-+Desktop.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.2);
+}
+
+.first_shop_01 nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    line-height: 17px;
+    color: white;
+    padding: 15px;
+}
+.first_shop_01 nav:hover
+{
+    background-color: white;
+    color: black;
+    transition: all .8s ease;
+}
+.first_shop_01 nav:hover li
+{
+    color: black;
+}
+.first_shop_01 nav ul li
+{
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 17px;
+    margin-right: 80px;
+}
+.first_shop_01 nav ul li:hover
+{
+   text-decoration:underline;
+}
+.first_shop_01_h1
+{
+    margin-bottom: 42px;
+    font-size: 85px;
+    line-height: 80px;
+    letter-spacing: .8px;
+    max-width: 600px;
+    color: white;
+    font-family: Simula,serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.first_shop_01_b, .first_shop_03_b
+{
+    cursor: pointer;
+    height: 52px;
+    font-size: 16px;
+    min-width: 163px;
+    color: #362b24;
+    background: #fff;
+    font-family: ABC Monument Grotesk,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    border-radius: 44px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.04);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.first_shop_01_b:hover , .first_shop_03_b:hover{
+    text-decoration: none;
+    background: #304561;
+    color: #fff;
+    transition: all .8s ease-in-out;
+}
+.first_shop_02_h1, .first_shop_02_div01
+{
+    display: inline-block;
+}
+.first_shop_02
+{
+    margin-top: 45px;
+}
+.first_shop_02_h1
+{
+    font-family: Simula,serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+hr
+{
+    margin-left: 25px!important;
+    opacity: 0.5!important;
+    width:1000px;
+    top: 103vh;
+    position: absolute;
+}
+.col
+{
+    padding: 0px!important; ;
+}
+.col_45 img
+{
+    min-height: 552px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.col_45 img:hover
+{
+    transform: scale(1.02);
+    transition: all 0.4s ease-in-out;
+}
+.col h2
+{
+        /* font-size: 2rem; */
+        font-size: 18px!important;
+        text-align: left;
+        margin: 15px;
+        font-family: ABC Monument Grotesk,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.first_shop_03
+{
+    background: #f3f0eb;
+    color: #362b24;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom:95px;
+}
+.first_shop_03_h1
+{
+    font-style: italic;
+    font-size: 50px;
+    font-family: Simula,serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+}
+.first_shop_03_p{
+    margin-top: 40px;
+    width: 900px;
+    margin-bottom: 70px;
+    letter-spacing: -.4px;
+    font-size: 25px;
+    line-height: 28px;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Simula,serif;
+    font-weight: 300;
+
+}
+.first_shop_04_p
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Graphik,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.4px;
+    text-align: left;
+
+}
+.first_shop_03_b
+{
+    color: #362b24;
+    background: #e59400;
+}
+.first_shop_04 img
+{
+    width: 100%;
+    object-fit: cover;
+}
+.first_shop_04 .col-sm-3 img
+{
+    width: 205%;
+    height: 900px;
+}
+.first_shop_04 .col-sm-9 .row
+{
+width: 625px;
+margin-left: 300px;
+}
+.first_shop_04_b
+{
+    outline: none;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background-color: white;
+    margin-top: 75px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+.first_shop_03_b
+{
+border-radius: 50%;
+padding: 0%;
+height: 54px;
+font-size: 16px;
+min-width: 54px;
+background-color: #e59400;
+}
+#cart {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin-right: 20px;
+}
+.highlight {
+    border: 2px solid green;
+}
+.image_in_05
+{
+    width: 730px;
+}
+.another
+{
+    width: 530px!important;
+}
+.first_shop_06
+{
+    background-color: #304561;
+    color: #fff;
+    text-align: center;
+    height:350px ;
+    padding-top: 82px;
+}
+.first_shop_06 h1
+{
+    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: Simula,serif;
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    font-variant: lining-nums;
+    font-style:normal;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    /* Ensure container does not exceed viewport width */
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.contain {
+    align-items: center;
+    max-width: 100px;
+    padding: 0 0px;
+}
+.nav-links {
+    list-style-type: none;
+    padding-top: 15px;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-links a:hover {
+    color:black;
+    text-decoration: underline;
+}
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+#navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 375px) {
+   section{
+    width: 327vw;
+   }
+
+   .first_shop_04 .col-sm-3 img {
+width: 100%;
+   }
+   .first_shop_04 .col-sm-9 .row
+   {
+    margin-left: 0px;
+   }
+   .col-8 {
+    flex: 0 0 auto;
+    width: 33.666667%;
+}
+.first_shop_04 .col-sm-9 .row {
+    width: 1211px;
+}
+.first_shop_05
+{
+    display: none;
+}
+address
+{
+    width: max-content;
+}
+address p {
+display: inline-block;
+}
+#cart
+{
+    margin-left: 583px;
+}
+}
+@media only screen and (max-width: 825px) {
+    section{
+        width: 327vw;
+       }
+       footer {
+        padding: 75px;
+        text-align: center;
+       }
+}
